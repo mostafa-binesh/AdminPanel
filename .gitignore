@@ -1,0 +1,8 @@
+/.env
+/tmp/build-errors.log
+tmp/main.exe
+.env.liara
+.env.local
+
+docker.exe
+liara.json

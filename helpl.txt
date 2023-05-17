@@ -1,0 +1,14 @@
+user agent: 	dev.Get("/userAgent", func(c *fiber.Ctx) error { return c.JSON(fiber.Map{"msg": c.Get("User-Agent")}) })
+best resource function:
+func ConvertToUserMinimal(users []*User) []*UserMinimal {
+    result := make([]*UserMinimal, 0, len(users))
+    for _, user := range users {
+        result = append(result, &UserMinimal{
+            FirstName: user.FirstName,
+            LastName:  user.LastName,
+        })
+    }
+    return result
+}
+TOOD:
+- change operator to condition in FilterByType 
